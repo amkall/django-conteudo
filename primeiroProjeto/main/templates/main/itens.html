@@ -29,8 +29,8 @@
             <th> <img alt="image" src="{{item.url_img}}" style="width: 60px"> </th>
             <th>{{item.preco}}</th>
             <th>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalhes produto</button>
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">comprar produto</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{item.pk}}">detalhes produto</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{item.pk}}">comprar produto</button>
             </th>
         </tr>
         {% endfor %}
