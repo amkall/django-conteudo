@@ -1,5 +1,6 @@
-{% extends 'main/base.html' %}
 
+{% extends 'main/base.html' %}
+{% load static %}
 <!--Overwrite-->
 {% block title %}
     home - loja
@@ -7,7 +8,7 @@
 
 {% block content %}
 <form>
-  <img src="{% static 'main\img\marcademm.png' %}" class="rounded mx-auto d-block" alt="marca demme">
+  <img src= "{% static 'img\demme.png' %}" class="img-fluid" alt="marca demme">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
