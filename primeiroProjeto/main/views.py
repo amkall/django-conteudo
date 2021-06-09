@@ -9,3 +9,9 @@ def homepage(request):
 def itenspage(request):
     itens = Item.objects.all()
     return  render(request, template_name = 'main/itens.html', context = {'itens': itens})
+
+def loginpage(request):
+    return  render(request, template_name = 'main/login.html')
+
+def registerpage(request):
+    return  render(request, template_name = 'main/register.html')
